@@ -1,0 +1,31 @@
+.footer{
+    background: $color_black;
+    width: 100%;
+    height: 200px;
+    display: flex;
+    align-items: center;
+    &-logo{
+        color: $color_white;
+        margin-bottom: 20px;
+        text-align: center;
+        &-start{
+            padding-right: .3rem;
+            font-size: 50px;
+        }
+
+        &-svg{
+            padding-right: .3rem;
+            height: 25px;
+        }
+
+        &-end{
+            padding-right: .3rem;
+            font-size: 40px;
+        }
+    }
+
+    &-copyrigth{
+        text-align: center;
+        color: $color_white;
+    }
+}

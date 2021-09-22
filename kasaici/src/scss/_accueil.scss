@@ -1,0 +1,56 @@
+.banner{
+    width: 100%;
+    position: relative;
+    background: $color_banner_mixed;
+    border-radius: 10px;
+    margin: 20px 0;
+    @media only screen and (max-width: 1024px){
+        height: 110px;
+    }
+    
+    &-img{
+        width: 100%;
+        @media only screen and (max-width: 1024px){
+            height: 110px;
+        }
+        object-fit: cover;
+        border-radius: 10px;
+        mix-blend-mode: multiply;
+    }
+
+    &-title{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
+        color: $color_white;
+        font-weight: bold;
+        font-size: 12px;
+        text-align: center;
+        margin: auto;
+    }
+}
+
+.locations{
+
+    .location{
+        width: 100%;
+        height: 250px;
+        background: linear-gradient(180deg, $color-primary 0%, rgba(0, 0, 0, 0.5) 100%);
+        border-radius: 10px;
+        position: relative;
+        display: flex;
+        align-items: flex-end;
+        margin: 20px 0;
+        &:hover{
+            cursor: pointer;
+        }
+        &-title{
+            margin: 1rem;
+            width: 100%;
+            color: $color_white;
+            font-weight: 500;
+        }
+    }
+
+}
