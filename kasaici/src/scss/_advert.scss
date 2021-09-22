@@ -1,0 +1,27 @@
+.informations{
+    display: flex;
+    justify-content: space-between;
+    color:$color-primary;
+    margin-bottom: 10px;
+    &-title{
+        font-weight: 500;
+    }
+
+    &-city{
+        font-weight: 500;
+        font-size: 14px;
+    }
+
+    &-tags{
+        display: flex;
+        justify-content: space-between;
+
+        &-item{
+            padding: .2rem 1.2rem;
+            color: $color_white;
+            background: $color-primary;
+            border-radius: 5px;
+            font-weight: 500;
+        }
+    }
+}
