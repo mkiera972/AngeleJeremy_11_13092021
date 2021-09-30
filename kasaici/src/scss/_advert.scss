@@ -1,27 +1,138 @@
 .informations{
-    display: flex;
-    justify-content: space-between;
+    @media only screen and (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+    }
     color:$color-primary;
-    margin-bottom: 10px;
+    margin-bottom: 20px;
+
+    &-localisation{
+        margin-bottom: 10px;
+    }
+
     &-title{
         font-weight: 500;
+        font-size: 28px;
     }
 
     &-city{
         font-weight: 500;
-        font-size: 14px;
+        @media only screen and (min-width: 1025px){
+            font-size: 16px;
+        }
     }
 
     &-tags{
         display: flex;
         justify-content: space-between;
-
+        flex-wrap: wrap;
         &-item{
             padding: .2rem 1.2rem;
             color: $color_white;
             background: $color-primary;
             border-radius: 5px;
+            font-size: 12px;
             font-weight: 500;
+            margin-bottom: .5rem;
+            @media only screen and (min-width: 1025px){
+                font-size: 16px;
+            }
+        }
+    }
+
+    &-autor{
+    
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+
+        @media only screen and (min-width: 768px){
+            flex-direction:column-reverse;
+            flex-wrap: wrap;
+            width: 20%;
+            position: relative;
+            align-items: flex-end;
+        }
+
+        
+    }
+
+    &-owner{
+        @media only screen and (max-width: 767px){
+            width: 45%;
+        }
+
+        @media only screen and (min-width: 768px){
+            padding: 1rem 0;
+        }
+        
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+
+        &-name{
+            @media only screen and (min-width: 768px){
+                width: 10%;
+            }
+        }
+        &-avatar{
+            height: 50px;
+            border-radius: 30px;
+        }
+    }
+
+    &-rating{
+        @media only screen and (max-width: 767px){
+            width: 30%;
+        }
+
+        display: flex;
+        justify-content: space-between;
+
+        @media only screen and (min-width: 768px){
+           position: relative;
+           top: -20px;
+        }
+
+        i{
+            padding: 0 .3rem;
+            @media only screen and (min-width: 1025px){
+                font-size: 40px;
+            }
+
+            @media only screen and (min-width: 768px) and (max-width: 1024px){
+                font-size: 20px;
+            }
+           
+        }
+    }
+    .none{
+        color: $color_none;
+    }
+}
+
+.house{
+    margin-bottom: 20px;
+    @media only screen and (min-width: 768px){
+        display: flex;
+        justify-content: space-between;
+    }
+    &-desc{
+        margin-bottom: 10px;
+        @media only screen and (min-width: 768px){
+            width: 48%;
+        }
+    }
+
+    &-equipments{
+        @media only screen and (min-width: 768px){
+            width: 48%;
+        }
+        &-list{
+            padding: 0;
+            &-item{
+                list-style: none;
+            }
         }
     }
 }

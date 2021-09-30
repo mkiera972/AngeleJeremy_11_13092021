@@ -1,6 +1,6 @@
 import React from 'react';
 import data from "./../data/data";
-import Locations from "./../Locations/Locations";
+import Adverts from "../Adverts/Adverts";
 
 class Home extends React.Component {
     render() {
@@ -10,11 +10,10 @@ class Home extends React.Component {
                     <img className="banner-img" alt="" src='/img/banner.png'/>
                     <p className="banner-title">Chez vous, partout et ailleurs</p>
                 </div>
-                <div className="locations">
-                    <Locations locations={data} />
+                <div className="adverts">
+                    <Adverts locations={data} />
                 </div>
-            </div>
-    
+            </div> 
         );
     }
 }
