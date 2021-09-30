@@ -1,0 +1,19 @@
+/**
+*   About
+*/
+.bannerAbout{
+    height: 220px;
+}
+
+.about{
+    margin-bottom: 20px;
+    &-infos{
+        margin-bottom: 20px;
+    }
+}
+
+.extraMargin{
+    @media only screen and (min-width: 1025px){
+        margin: 2rem 6rem;
+    }
+}
