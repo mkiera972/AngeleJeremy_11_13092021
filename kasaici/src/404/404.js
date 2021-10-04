@@ -1,4 +1,5 @@
 import React from 'react';
+import {Link} from "react-router-dom";
 
 class Noroute extends React.Component {
 
@@ -9,7 +10,7 @@ class Noroute extends React.Component {
                     <div className="noroute-box">
                         <p className="noroute-title">404</p>
                         <p className="noroute-text">Oups! La page que vous demandez n'existe pas.</p>
-                        <p className="noroute-text">Oups! La page que vous demandez n'existe pas.</p>
+                        <Link className="noroute-text link" to="/">Retourner sur la page d’accueil</Link>
                     </div>
                     
                 </div>

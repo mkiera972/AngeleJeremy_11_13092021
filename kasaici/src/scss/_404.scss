@@ -3,20 +3,36 @@
 */
 .noroute{
     height: 80vh;
+    @media only screen and (min-width: 1025px){
+        height: 60vh;
+    }
     display: flex;
     align-items: center;
     justify-content: center;
     color: $color-primary;
     flex-wrap: wrap;
+    text-align: center;
     &-title{
-        font-size: 4rem;
+        font-size: 8rem;
         font-weight: bold;
         text-align: center;
+        margin: 0;
     }
 
     &-text{
         font-size: 24px;
         text-align: center;
         font-weight: 500;
+        margin-bottom: 100px;
+    }
+
+    .link{
+        text-decoration: none;
+        color: $color-primary;
+        &:hover{
+            color: $color-secondary;
+            font-size: 26px;
+            transform: scale(1);
+        }
     }
 }

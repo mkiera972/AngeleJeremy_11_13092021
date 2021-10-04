@@ -1,5 +1,8 @@
-const Footer = () => {
-    return(
+import React from 'react';
+
+class Footer extends React.Component {
+    render() {
+        return (       
         <section className="footer">
             <div className="container">
                 <div className="footer-logo">
@@ -15,6 +18,7 @@ const Footer = () => {
                 </div>
             </div>
         </section>
-    );
+        );
+    }
 }
 export default Footer;

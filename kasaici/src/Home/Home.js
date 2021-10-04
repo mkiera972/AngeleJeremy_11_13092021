@@ -11,7 +11,7 @@ class Home extends React.Component {
                     <p className="banner-title">Chez vous, partout et ailleurs</p>
                 </div>
                 <div className="adverts">
-                    <Adverts locations={data} />
+                    <Adverts adverts={data} />
                 </div>
             </div> 
         );
