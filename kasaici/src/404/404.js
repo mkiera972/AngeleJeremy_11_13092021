@@ -1,8 +1,11 @@
 import React from 'react';
 import {Link} from "react-router-dom";
 
+/**
+ * COMPOSANT NOROUTE alias 404
+ * Cette page s'achiche pour chaque route Existente
+ */
 class Noroute extends React.Component {
-
     render() {
         return (
             <div className="container">

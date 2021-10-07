@@ -9,3 +9,6 @@
 3) installer les dépendances via > npm install
 
 4) lancer le projet via > npm start
+
+### REACT ROUTEUR
+Toute la logique du routage de l'APP se trouve dans le fichier kasaici/App.js

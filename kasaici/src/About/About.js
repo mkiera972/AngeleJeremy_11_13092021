@@ -1,7 +1,11 @@
 import React from 'react';
 
+/**
+ * COMPOSANT ABOUT
+ * AFFICHE LA PAGE ABOUT
+ * GESTION DES COLLAPSIBLES DE LA PAGE
+ */
 class About extends React.Component {
-
     initCollapsible(){
         let coll = document.getElementsByClassName("collapsible");
         let i;

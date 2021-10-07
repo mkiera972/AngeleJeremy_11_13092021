@@ -1,8 +1,14 @@
 import React from 'react';
 import data from "../data/data";
 
-
-class Location extends React.Component {
+/**
+ * COMPOSANT ADVERT
+ * Cette classe affiche les données de la location courante
+ * Récupération des données de la location via des données JSON
+ * Gestion d'un slideshow pour les images de location
+ * Gestion des collapsibles pour la description de la location
+ */
+class Advert extends React.Component {
 
 constructor(props){
     super(props);
@@ -25,20 +31,20 @@ constructor(props){
         }
     }
    
-    // Next/previous controls
+    // SUIVANT/PRECEDENT CONTROLS
     plusSlides(n) {
         this.showSlides(this.slideIndex += n);
     }
 
-    // Thumbnail image controls
+    // AFFICHAGE DE L'IMAGE COURANTE
     currentSlide(n) {
         this.showSlides(this.slideIndex = n);
     }
 
     /**
      * Génération des étoiles d'avis.
-     * @param {*} rating 
-     * @returns 
+     * @param {*} rating note d'avis
+     * @returns html 
      */
     genRating(rating){
 
@@ -115,7 +121,7 @@ constructor(props){
 
     /**
      * Affichage du slide
-     * @param {*} number
+     * @param {*} number index du slide
      */
     showSlides(n) {
         var i;
@@ -241,4 +247,4 @@ constructor(props){
         );
     }
 };
-export default Location;
+export default Advert;
