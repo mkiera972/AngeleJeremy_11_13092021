@@ -5,7 +5,7 @@ import {
   Switch,
   Route
 } from "react-router-dom";
-import Nav from './nav/Nav';
+import Header from './Header/Header';
 import Home from './Home/Home';
 import About from './About/About';
 import Advert from './Advert/Advert';
@@ -17,7 +17,7 @@ class App extends React.Component {
   render() {
     return (
       <Router>
-        <Nav/>
+        <Header/>
           <Switch>
             <Route exact path="/" component={Home}/>
             <Route path="/about" component={About}/>
