@@ -61,7 +61,7 @@
 
     &-owner{
         @media only screen and (max-width: 767px){
-            width: 45%;
+            width: 40%;
         }
 
         @media only screen and (min-width: 768px){
@@ -73,8 +73,13 @@
         justify-content: space-between;
 
         &-name{
+            text-align: end;
+            @media only screen and (max-width: 767px){
+                margin-right: 10px;
+            }
+
             @media only screen and (min-width: 768px){
-                width: 10%;
+                width: 60%;
             }
         }
         &-avatar{

@@ -2,7 +2,8 @@
 .noroute{
     height: 80vh;
     @media only screen and (min-width: 1025px){
-        height: 60vh;
+        height: 70vh;
+        margin-bottom: 30px;
     }
     display: flex;
     align-items: center;
@@ -31,6 +32,7 @@
             color: $color-secondary;
             font-size: 26px;
             transform: scale(1);
+            text-decoration: underline;
         }
     }
 }

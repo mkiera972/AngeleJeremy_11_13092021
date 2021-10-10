@@ -5,6 +5,8 @@
     background: $color_banner_mixed;
     border-radius: 10px;
     margin: 20px 0;
+
+
     @media only screen and (max-width: 1024px){
         height: 110px;
     }
@@ -33,11 +35,39 @@
         position: absolute;
         top: 50%;
         left: 50%;
-        transform: translate(-50%, -50%);
-        color: $color_white;
-        font-weight: bold;
-        font-size: 12px;
         text-align: center;
+        transform: translate(-50%, -50%);
+        @media only screen and (max-width: 767px){
+            top: 50%;
+            left: 25%;
+            font-size: 18px;
+            text-align: initial;
+
+            &-sub{
+                display: block;
+            }
+        }
+
+        @media only screen and (max-width: 350px){
+            left: 35%;
+        }
+
+        @media only screen and (min-width: 351px) and (max-width: 400px){
+            left: 30%;
+        }
+
+        color: $color_white;
+        font-weight: 500;
+        font-size: 12px;
+
+        @media only screen and (min-width: 768px) and (max-width: 1024px){
+            font-size: 24px;
+        }
+
+        @media only screen and (min-width: 1025px){
+            font-size: 36px;
+        }
+
         margin: auto;
     }
 }
