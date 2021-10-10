@@ -4,8 +4,8 @@ import data from "../data/data";
 /**
  * COMPOSANT ADVERT
  * Cette classe affiche les données de la location courante
- * Récupération des données de la location via des données JSON
- * Gestion d'un slideshow pour les images de location
+ * Récupération des données de la location via des données JSON grâce son ID
+ * Gestion d'un slideshow pour les images de la location
  * Gestion des collapsibles pour la description de la location
  */
 class Advert extends React.Component {
