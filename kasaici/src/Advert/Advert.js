@@ -188,8 +188,17 @@ constructor(props){
                                             <div className="slideshow-mySlides-number">{currentKey + "/" + this.state.data[0].pictures.length}</div>
                                         </div>})
                             }
-                            <span className="prev"  onClick={()=> this.plusSlides(-1)}>&#10094;</span>
-                            <span className="next"  onClick={()=> this.plusSlides(1)}>&#10095;</span>
+                            {
+                                this.state.data[0].pictures.length > 1
+                                ? 
+                                    <React.Fragment>
+                                        <span className="prev"  onClick={()=> this.plusSlides(-1)}>&#10094;</span>
+                                        <span className="next"  onClick={()=> this.plusSlides(1)}>&#10095;</span>
+                                    </React.Fragment> 
+                                :
+                                    ""
+                            }
+
                         </div>
                         <section className="informations">
                             <div className="informations-localisation">
