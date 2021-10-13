@@ -1,5 +1,35 @@
 /********* COLLAPSIBLE **************/
 
+.collapsibles{
+  margin-bottom: 20px;
+  @media only screen and (min-width: 768px){
+      display: flex;
+      justify-content: space-between;
+  }
+  &-desc{
+      margin-bottom: 10px;
+      @media only screen and (min-width: 768px){
+          width: 48%;
+      }
+  }
+
+  &-infos{
+      margin-bottom: 20px;
+  }
+
+  &-equipments{
+      @media only screen and (min-width: 768px){
+          width: 48%;
+      }
+      &-list{
+          padding: 0;
+          &-item{
+              list-style: none;
+          }
+      }
+  }
+}
+
 .collapsible {
     background-color: $color-primary;
     color: white;
@@ -21,14 +51,6 @@
       float: right;
       margin-left: 5px;
     }
-  }
-
-  .on{
-    display: block;
-  }
-
-  .off{
-    display: none;
   }
   
   .active, .collapsible:hover {

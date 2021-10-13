@@ -1,5 +1,6 @@
 import React from 'react';
 import data from "../data/data";
+import Collapsibles from '../Collapsibles/collapsibles';
 
 /**
  * COMPOSANT ADVERT
@@ -171,7 +172,7 @@ constructor(props){
     componentDidUpdate(){
         if(this.state.data.length > 0){   
             this.showSlides(this.slideIndex);
-            this.initCollapsible();
+            //this.initCollapsible();
         }
     }
 
@@ -223,30 +224,14 @@ constructor(props){
                                 </div>
                             </div>
                         </section>
-                        <section className="house">
-                            <div className="house-desc">
-                                <button className="collapsible">Description 
-                                    <i className="fa fa-angle-down on" aria-hidden="true"></i>
-                                    <i className="fa fa-angle-up off" aria-hidden="true"></i>
-                                </button>
-                                <div className="content">
-                                    <p>{this.state.data[0].description}</p>
-                                </div>
+                        <section className="collapsibles">
+                            <div className="collapsibles-desc">
+                                <Collapsibles title="Description" content={this.state.data[0].description} type="text"/>
                             </div>
-                            <div className="house-equipments">
-                                <button className="collapsible">Équipements
-                                    <i className="fa fa-angle-down on" aria-hidden="true"></i>
-                                    <i className="fa fa-angle-up off" aria-hidden="true"></i>
-                                </button>
-                                <div className="content">
-                                    <ul className="house-equipments-list">
-                                        {
-                                            this.state.data[0].equipments.map((equipment, i) => {
-                                            return <li key={i} className="house-equipments-list-item">{equipment}</li>})
-                                        }
-                                    </ul>
-                                </div>
-                            </div>
+
+                            <div className="collapsibles-desc">
+                                <Collapsibles title="Équipements" content={this.state.data[0].equipments} type="list"/>
+                            </div>                        
                         </section>
                     </div>   
                 :
