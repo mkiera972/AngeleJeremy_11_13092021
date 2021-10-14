@@ -138,32 +138,6 @@ constructor(props){
         slides[this.slideIndex-1].style.display = "block";
     }
 
-    /**
-     * Initialisation des collaps et des évents
-     */
-    initCollapsible(){
-        let coll = document.getElementsByClassName("collapsible");
-        let i;
-
-        for (i = 0; i < coll.length; i++) {
-            coll[i].addEventListener("click", function() {
-                    if(this.children[0].className === "fa fa-angle-down on"){
-                        this.children[0].className="fa fa-angle-down off";
-                        this.children[1].className="fa fa-angle-up on";
-                    }else{
-                        this.children[0].className="fa fa-angle-down on";
-                        this.children[1].className="fa fa-angle-up off";
-                    }
-                    this.classList.toggle("active");
-                    var content = this.nextElementSibling;
-                    if (content.style.maxHeight){
-                    content.style.maxHeight = null;
-                    } else {
-                    content.style.maxHeight = content.scrollHeight + "px";
-                } 
-            });
-        }
-    }
     
     componentDidMount(){
         this.getCurrentDataAdvert();
@@ -172,7 +146,6 @@ constructor(props){
     componentDidUpdate(){
         if(this.state.data.length > 0){   
             this.showSlides(this.slideIndex);
-            //this.initCollapsible();
         }
     }
 
